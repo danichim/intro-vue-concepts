@@ -37,19 +37,22 @@ export default {
   methods: {
     cautaRaspuns: function () {
         if (this.intrebare.indexOf('?') === -1) {
-            this.raspuns = 'Questions usually contain a question mark. ;-)'
+            this.raspuns = 'Questions usually contain a question mark.'
             return
         }
         this.raspuns = 'Thinking...'
         var self = this
         this.axios.get('https://yesno.wtf/api')
         .then(function (response) {
-            self.raspuns = _.capitalize(response.data.answer)
+            self.raspuns = self.capitalize(response.data.answer)
             self.image = response.data.image
         })
         .catch(function (error) {
             self.raspuns = 'Error! Could not reach the API. ' + error
         })
+    },
+    capitalize: function (string) {
+      return string.charAt(0).toUpperCase() + string.slice(1);
     }
   }
 }
