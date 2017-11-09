@@ -1,5 +1,5 @@
 <template>
-  <div class="form">
+  <div class="form-input">
     <h3>{{ titlu }}</h3>
 
     <v-form ref="form" lazy-validation>

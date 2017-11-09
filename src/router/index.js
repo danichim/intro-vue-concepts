@@ -5,6 +5,9 @@ import Declarative from "@/components/Declarative";
 import Conditionals from "@/components/Conditionals";
 import Form from "@/components/Form";
 import Computed from "@/components/Computed";
+import ClassBinding from "@/components/ClassBinding";
+import EventHandling from "@/components/EventHandling";
+import Parent from "@/components/Parent";
 
 Vue.use(Router)
 
@@ -39,6 +42,20 @@ export default new Router({
       path: "/computed",
       name: "computed",
       component: Computed
+    },
+    {
+      path: "/class",
+      name: "class",
+      component: ClassBinding
+    },
+    {
+      path: "/event",
+      name: "event",
+      component: EventHandling
+    },{
+      path: "/parent",
+      name: "parent",
+      component: Parent
     }
   ]
 })

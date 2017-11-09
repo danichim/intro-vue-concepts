@@ -22,12 +22,12 @@
     <p v-else>No todos left!</p>
     <hr/>
 
-    <div v-for="(value, key, index) in object">
+    <div v-for="(value, key, index) in object" v-bind:key="key">
       {{ index }}. {{ key }}: {{ value }}
     </div><hr/>
 
     <div>
-      <span v-for="n in 10">{{ n }} </span>
+      <span v-for="n in 10" v-bind:key="n">{{ n }} </span>
     </div>
 
   </div>

@@ -103,15 +103,33 @@
       left: null,
       items: [
         { title: 'Home', icon: 'home', routeName: '/home', active: false },
-        { title: 'Declarative', icon: 'dashboard', routeName: 'declarative', active: false },
-        { title: 'Conditionals', icon: 'event', routeName: 'conditionals', active: false },
-        { title: 'Form Input Bindings', icon: 'event', routeName: 'form', active: false },
-        { title: 'Computed Properties', icon: 'event', routeName: 'computed', active: false },
-        { title: 'User', icon: 'mouse', active : false,
+        { title: 'Declarative', icon: 'dashboard', routeName: '/declarative', active: false },
+        { title: 'Conditionals', icon: 'event', routeName: '/conditionals', active: false },
+        { title: 'Form Input Bindings', icon: 'event', routeName: '/form', active: false },
+        { title: 'Computed Properties', icon: 'event', routeName: '/computed', active: false },
+        { title: 'Class and Style Bindings', icon: 'event', routeName: '/class', active: false },
+        { title: 'Event Handling', icon: 'event', routeName: '/event', active: false },
+        { title: 'Components', icon: 'event', routeName: '/parent', active: false },
+        { title: 'Todos CRUD', icon: 'mouse', active : false,
           items: [{
               active : false,
               title: 'Create ',
-              routeName: '/user/create'
+              routeName: '/todo/create'
+          },
+          {
+              active : false,
+              title: 'Read',
+              routeName: '/todo/read'
+          },
+          {
+              active : false,
+              title: 'Update',
+              routeName: '/todo/update'
+          },
+          {
+              active : false,
+              title: 'Delete',
+              routeName: '/todo/delete'
           }]
         },
       ]
