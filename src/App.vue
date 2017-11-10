@@ -110,26 +110,61 @@
         { title: 'Class and Style Bindings', icon: 'event', routeName: '/class', active: false },
         { title: 'Event Handling', icon: 'event', routeName: '/event', active: false },
         { title: 'Components', icon: 'event', routeName: '/parent', active: false },
-        { title: 'Todos CRUD', icon: 'mouse', active : false,
+        { title: 'Examples', icon: 'mouse', active : false,
           items: [{
               active : false,
-              title: 'Create ',
-              routeName: '/todo/create'
+              title: 'TodoMVC',
+              routeName: '/todos'
           },
           {
               active : false,
-              title: 'Read',
-              routeName: '/todo/read'
+              title: 'Markdown Editor',
+              routeName: '/markdown'
           },
           {
               active : false,
-              title: 'Update',
-              routeName: '/todo/update'
+              title: 'GitHub Commits',
+              routeName: '/gitHub'
           },
           {
               active : false,
-              title: 'Delete',
-              routeName: '/todo/delete'
+              title: 'Grid Component',
+              routeName: '/grid'
+          },
+          {
+              active : false,
+              title: 'Tree View',
+              routeName: '/tree'
+          },
+          {
+              active : false,
+              title: 'SVG Graph',
+              routeName: '/svg'
+          },
+          {
+              active : false,
+              title: 'Modal Component',
+              routeName: '/modal'
+          },
+          {
+              active : false,
+              title: 'Elastic Header',
+              routeName: '/elastic'
+          },
+          {
+              active : false,
+              title: 'Wrapper Component',
+              routeName: '/grid'
+          },
+          {
+              active : false,
+              title: 'Realtime with deepstreamHub',
+              routeName: '/grid'
+          },
+          {
+              active : false,
+              title: 'Firebase + Validation',
+              routeName: '/grid'
           }]
         },
       ]

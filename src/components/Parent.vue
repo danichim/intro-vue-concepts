@@ -1,38 +1,37 @@
 
 <template>
-  <div class="home">
+  <div class="parent-component">
     <h3>{{ msg }}</h3>
     <v-text-field
       name="input-3"
-      label="Pune o intrebare cu da sau nu"
+      label="Mesaj pentru child component"
       value="Input text"
       v-model="parentMsg"
       required
     ></v-text-field>
-    <child v-bind:my-message="parentMsg"></child>
-    <child my-message="hello!"></child>
-    <child v-for="n in 3" v-bind:key="n" v-bind:my-message="randomize()"></child>
+    <child-component v-bind:my-message="parentMsg"></child-component>
+    <child-component my-message="hello child!"></child-component>
+    <child-component v-for="n in 3" v-bind:key="n" v-bind:my-message="randomize()"></child-component>
   </div>
 </template>
 
 <script>
-import Child from './Child.vue'
+import ChildComponent from './Child.vue'
 
 export default {
-  name: 'Home',
+  name: 'ParentComponent',
   data () {
     return {
       parentMsg: '',
-      nr: 0,
       msg: 'Components and child components'
     }
   },
   methods: {
     randomize: function() {
-      return Math.random()
+      return Math.floor(Math.random() * 3) + 1
     }
   },
-  components: { Child }
+  components: { ChildComponent }
 }
 </script>
 

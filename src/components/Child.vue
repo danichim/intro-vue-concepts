@@ -6,7 +6,7 @@
 
 <script>
 export default {
-  name: 'child',
+  name: 'ChildComponent',
   props: ['myMessage']
 }
 </script>
