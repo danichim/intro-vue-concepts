@@ -30,6 +30,35 @@
       <span v-for="n in 10" v-bind:key="n">{{ n }} </span>
     </div>
 
+    <br/><hr>  <hr>
+    <span style=color:red>&lt;div v-if="vezi"&gt;</span>Acum poti afisa!<span style=color:red>&lt;/div&gt;</span><br/>
+    <span style=color:red>&lt;h3 v-else&gt;</span>Nu este afisat<span style=color:red>&lt;/h3&gt;</span><br/>
+    <span style=color:red>&lt;hr/&gt;</span><br/><br/>
+
+    <span style=color:red>&lt;div v-if="type === 'A'"&gt;</span>A<span style=color:red>&lt;/div&gt;</span><br/>
+    <span style=color:red>&lt;div v-else-if="type === 'B'"&gt;</span>B<span style=color:red>&lt;/div&gt;</span><br/>
+    <span style=color:red>&lt;div v-else-if="type === 'C'"&gt;</span>C<span style=color:red>&lt;/div&gt;</span><br/>
+    <span style=color:red>&lt;div v-else&gt;</span>Not A/B/C<span style=color:red>&lt;/div&gt;</span><br/>
+    <span style=color:red>&lt;hr/&gt;</span><br/><br/>
+
+    <span style=color:red>&lt;h2 v-show="hideShow"&gt;</span>Hello!<span style=color:red>&lt;hr/&gt;</span><span style=color:red>&lt;/h2&gt;</span><br/><br/>
+
+    <span style=color:red>&lt;ul v-if="todos.length"&gt;</span><br/>
+      <span style=color:red>&lt;li v-for="(todo, index) in todos" v-if="!todo.isComplete" v-bind:title="todo.text" :key="todo.id"&gt;</span><br/>
+        { { mesajParinte } } { { index+1 } } . { { todo.text } }<br/>
+      <span style=color:red>&lt;/li&gt;</span><br/>
+    <span style=color:red>&lt;/ul&gt;</span><br/>
+    <span style=color:red>&lt;p v-else&gt;</span>No todos left!<span style=color:red>&lt;/p&gt;</span><br/>
+    <span style=color:red>&lt;hr/&gt;</span><br/><br/>
+
+    <span style=color:red>&lt;div v-for="(value, key, index) in object" v-bind:key="key"&gt;</span><br/>
+      { { index } } . { { key } } : { { value } }<br/>
+    <span style=color:red>&lt;/div&gt;</span><span style=color:red>&lt;hr/&gt;</span><br/><br/>
+
+    <span style=color:red>&lt;div&gt;</span><br/>
+      <span style=color:red>&lt;span v-for="n in 10" v-bind:key="n"&gt;</span>{{ n }} <span style=color:red>&lt;/span&gt;</span><br/>
+    <span style=color:red>&lt;/div&gt;</span><br/>
+
   </div>
 </template>
 

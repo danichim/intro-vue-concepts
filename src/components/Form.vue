@@ -14,6 +14,19 @@
     <p>{{ raspuns }}</p>
     <img v-if="image" :src="image">
 
+    <br/><hr>  <hr>
+    <span style=color:red>&lt;v-form ref="form" lazy-validation&gt;</span><br/>
+        <span style=color:red>&lt;v-text-field<br/>
+                &emsp;&emsp;&emsp;&emsp;name="input-3"<br/>
+                &emsp;&emsp;&emsp;&emsp;label="Pune o intrebare cu da sau nu"<br/>
+                &emsp;&emsp;&emsp;&emsp;value="Input text"<br/>
+                &emsp;&emsp;&emsp;&emsp;v-model="intrebare"<br/>
+                &emsp;&emsp;&emsp;&emsp;required<br/>
+                &gt;</span><span style=color:red>&lt;/v-text-field&gt;</span><br/>
+    <span style=color:red>&lt;/v-form&gt;</span><br/>
+    <span style=color:red>&lt;p&gt;</span>{ { raspuns } }<span style=color:red>&lt;/p&gt;</span><br/>
+    <span style=color:red>&lt;img v-if="image" :src="image"&gt;</span><br/>
+
   </div>
 </template>
 

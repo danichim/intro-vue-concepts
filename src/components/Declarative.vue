@@ -5,6 +5,15 @@
     <div v-bind:title="hoverText" v-bind:id="idDynamic">{{msg5}}</div>
     <div v-html="parseHTML"></div>
     <div v-bind:class="clasaNoua">{{msg5}}</div>
+         
+    <br/><hr>  <hr>
+    <span style=color:red>&lt;h3&gt;</span>{{ titlu }}<span style=color:red>&lt;/h3&gt;</span><br/>
+    <span>&lt;div v-text="msgText"&gt;</span><span>&lt;/div&gt;</span><br/>
+
+    <span style=color:red>&lt;div v-bind:title="hoverText" v-bind:id="idDynamic"&gt;</span>{{msg5}}<span style=color:red>&lt;/div&gt;</span><br/>
+    <span style=color:red>&lt;div v-html="parseHTML"&gt;</span><span style=color:red>&lt;/div&gt;</span><br/>
+    <span style=color:red>&lt;div v-bind:class="clasaNoua"&gt;</span>{{msg5}}<span style=color:red>&lt;/div&gt;</span>
+    
   </div>
 </template>
 
